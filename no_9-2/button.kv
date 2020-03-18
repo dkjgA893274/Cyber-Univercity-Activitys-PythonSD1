@@ -1,0 +1,23 @@
+TextWidget:
+ 
+<TextWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+ 
+        BoxLayout:
+            Button:
+                id: button1
+                font_name: "ipaexg.ttf"
+                text: "左"
+                on_press: root.buttonClicked1()
+            Button:     # ボタン
+                id: button2
+                font_name: "ipaexg.ttf"
+                text: "右"
+                on_press: root.buttonClicked2()
+ 
+        Label:      # ラベル
+            id: label1     # 追加
+            font_name: "ipaexg.ttf"
+            text: root.text
