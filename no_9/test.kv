@@ -1,0 +1,15 @@
+TextWidget:
+ 
+<TextWidget>:
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.size
+ 
+        Label:      # ラベル
+            id: label1     # 追加
+            font_name: "ipaexg.ttf"
+            text: root.text
+        Button:     # ボタン
+            id: button1    # 追加
+            text: "OK"
+            on_press: root.buttonClicked()
